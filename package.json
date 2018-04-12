@@ -1,0 +1,15 @@
+{
+  "name": "scoville_redux_study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tomohiroo/Scoville_redux_study.git",
+  "author": "Tomohiro_Ueda <ueda_t@sc0ville.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^0.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-react-app": "^3.1.1",
+    "parcel-bundler": "^1.7.0"
+  }
+}
