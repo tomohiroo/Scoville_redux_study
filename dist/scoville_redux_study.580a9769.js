@@ -22135,7 +22135,6 @@ var todos = function todos() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var action = arguments[1];
 
-  console.log(state);
   switch (action.type) {
     case 'ADD_TODO':
       return [].concat(_toConsumableArray(state), [todo(action, undefined)]);
@@ -22164,7 +22163,7 @@ var AddTodo = function AddTodo(_ref) {
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 54
       },
       __self: _this
     },
@@ -22172,7 +22171,7 @@ var AddTodo = function AddTodo(_ref) {
         input = node;
       }, __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 55
       },
       __self: _this
     }),
@@ -22185,7 +22184,7 @@ var AddTodo = function AddTodo(_ref) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 58
         },
         __self: _this
       },
@@ -22216,7 +22215,7 @@ var Todo = function Todo(_ref2) {
     'li',
     { onClick: onClick, __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 88
       },
       __self: _this
     },
@@ -22224,7 +22223,7 @@ var Todo = function Todo(_ref2) {
       'p',
       { style: { textDecoration: completed ? 'line-through' : 'none' }, __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 89
         },
         __self: _this
       },
@@ -22240,16 +22239,16 @@ var TodoList = function TodoList(_ref3) {
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 95
       },
       __self: _this
     },
     todos.map(function (todo) {
-      return _react2.default.createElement(Todo, Object.assign({ key: todos.indexOf(todo) }, todo, { onClick: function onClick() {
+      return _react2.default.createElement(Todo, Object.assign({ key: todo.id }, todo, { onClick: function onClick() {
           return onTodoClick(todo.id);
         }, __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 97
         },
         __self: _this
       }));
@@ -22279,21 +22278,21 @@ var TodoApp = function TodoApp() {
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123
+        lineNumber: 122
       },
       __self: _this
     },
     _react2.default.createElement(AddTodo, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124
+        lineNumber: 123
       },
       __self: _this
     }),
     _react2.default.createElement(VisibleTodoList, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125
+        lineNumber: 124
       },
       __self: _this
     })
@@ -22303,19 +22302,19 @@ _reactDom2.default.render(_react2.default.createElement(
   _reactRedux.Provider,
   { store: (0, _redux.createStore)(todoApp), __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 128
     },
     __self: undefined
   },
   _react2.default.createElement(TodoApp, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 129
     },
     __self: undefined
   })
 ), document.getElementById('root'));
-},{"react":4,"react-dom":3,"redux":6,"react-redux":5}],69:[function(require,module,exports) {
+},{"react":4,"react-dom":3,"redux":6,"react-redux":5}],70:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -22484,5 +22483,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[69,2])
+},{}]},{},[70,2])
 //# sourceMappingURL=/scoville_redux_study.580a9769.map

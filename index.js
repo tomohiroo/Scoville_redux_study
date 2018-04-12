@@ -26,7 +26,6 @@ const todo = (action, todo) => {
 }
 
 const todos = (state = [], action) => {
-  console.log(state);
   switch (action.type) {
     case 'ADD_TODO':
       return[
@@ -34,9 +33,9 @@ const todos = (state = [], action) => {
         todo(action, undefined)
       ]
     case 'TOGGLE_TODO':
-      return(state.map((t) => {
-          return (todo(action, t))
-        })
+      return(state.map((t) => (
+          todo(action, t)
+        ))
       )
     default:
       return state
@@ -95,7 +94,7 @@ const Todo = ({onClick, text, completed}) => (
 const TodoList = ({todos, onTodoClick}) => (
   <ul>
     {todos.map((todo) =>
-      <Todo key={todos.indexOf(todo)} {...todo} onClick={() => onTodoClick(todo.id)} />
+      <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
     )}
   </ul>
 )
