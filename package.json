@@ -6,7 +6,11 @@
   "author": "Tomohiro_Ueda <ueda_t@sc0ville.com>",
   "license": "MIT",
   "dependencies": {
-    "parcel": "^0.0.1"
+    "parcel": "^0.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "babel-preset-react-app": "^3.1.1",
